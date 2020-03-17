@@ -1,0 +1,142 @@
+Script started on Wed Jan 29 19:38:39 2020
+bash-3.2$ cd exercise/
+bash-3.2$ whoami
+diaoqinyu
+bash-3.2$ . setup.sh
+Initialized empty Git repository in /Users/diaoqinyu/Desktop/EE461L/git_repo/git-katas/basic-commits/exercise/.git/
+bash-3.2$ ls
+bash-3.2$ cd exercise
+bash: cd: exercise: No such file or directory
+bash-3.2$ ls
+bash-3.2$ pwd
+/Users/diaoqinyu/desktop/EE461L/git_repo/git-katas/basic-commits/exercise
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+bash-3.2$ git log
+fatal: your current branch 'master' does not have any commits yet
+bash-3.2$ touch afile.txt
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	afile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+bash-3.2$ git add afile.txt
+gitcstatuse.txtxt afile.txt
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   afile.txt
+
+bash-3.2$ git commit
+hint: Waiting for your editor to close the file... "~/Desktop/EE461L/git_repo/git-katas/basic-commits/exercise/.git/COMMIT_EDITMSG" 11L, 231C▽	# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#new file:   afile.txt
+#
+".git/COMMIT_EDITMSG" 11L, 245C written 										      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  -- INSERT --NInitial commit:wq
+[master (root-commit) 2f7c6e8] Initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 afile.txt
+bash-3.2$ git status
+On branch master
+nothing to commit, working tree clean
+bash-3.2$ git status
+On branch master
+nothing to commit, working tree clean
+bash-3.2$ vim afile.txt
+"afile.txt" 1L, 14C written															   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   ~																 ~															       ~															     ~																   -- INSERT --Hello, World!:wq
+githstatusvim afile.txt
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   afile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+githaddtafile.txtle.txt
+githstatusvim afile.txt.txt
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   afile.txt
+
+vimhafile.txt.txtle.txt.txt
+"afile.txt" 1L, 14C▽  Hello, World!
+"afile.txt" 2L, 20C written												      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      Hello, World-- INSERT --!Hello, World!:wq
+githcommittxt.txtle.txt
+hint: Waiting for your editor to close the file... "~/Desktop/EE461L/git_repo/git-katas/basic-commits/exercise/.git/COMMIT_EDITMSG" 11L, 269C▽	# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#modified:   afile.txt
+#
+# Changes not staged for commit:
+#modified:   afile.txt
+#
+~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  -- INSERT --dadded hello"Hello, World!'
+".git/COMMIT_EDITMSG"-11L,E290C-written
+[master 7d67132] added "Hello, World!"
+ 1 file changed, 1 insertion(+)
+githstatusile.txtle.txt
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   afile.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git loh
+git: 'loh' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+bash-3.2$ git log
+commit 7d671322e006525d5a69a543afbb1a1f2471aec2 (HEAD -> master)
+Author: qinyudiao <qdiao@utexas.edu>
+Date:	Wed Jan 29 19:50:16 2020 -0600
+
+    added "Hello, World!"
+
+commit 2f7c6e866772b016a2158cf1d87d68d9f515ba30
+Author: qinyudiao <qdiao@utexas.edu>
+Date:	Wed Jan 29 19:47:09 2020 -0600
+
+    Initial commit
+bash-3.2$ git commit -a
+hint: Waiting for your editor to close the file... "~/Desktop/EE461L/git_repo/git-katas/basic-commits/exercise/.git/COMMIT_EDITMSG" 8L, 210C▽  # Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#modified:   afile.txt
+#
+".git/COMMIT_EDITMSG" 8L, 223C written											      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    -- INSERT --added "yeha!:wq
+[master c6c5569] added "yeha!"
+ 1 file changed, 1 insertion(+)
+bash-3.2$ exit
+exit
+
+Script done on Wed Jan 29 19:53:15 2020

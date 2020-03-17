@@ -1,0 +1,7 @@
+gcc -o myprog file2.c file3.c hello.c
+
+myprog: file2.o file3.o hello.o
+        gcc - o myprog file2.o file3.o hello.o
+
+file2.o: file2.c
+         gcc -c -o file2.o file2.c

@@ -1,0 +1,119 @@
+Script started on Wed Jan 29 20:01:43 2020
+bash-3.2$ whoami
+diaoqinyu
+bash-3.2$ . setup.sh
+Initialized empty Git repository in /Users/diaoqinyu/Desktop/EE461L/git_repo/git-katas/basic-staging/exercise/.git/
+[master (root-commit) a70e322] 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+bash-3.2$ pwd
+/Users/diaoqinyu/desktop/EE461L/git_repo/git-katas/basic-staging/exercise
+bash-3.2$ cat file.txt
+1
+bash-3.2$ echo 2 > file.txt
+bash-3.2$ git diff
+diff --git a/file.txt b/file.txt
+index d00491f..0cfbf08 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-1
++2
+bash-3.2$ git diff --staged
+bash-3.2$ git add file.txt
+bash-3.2$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   file.txt
+
+bash-3.2$ git diffus
+bash-3.2$ git difff--staged
+diff --git a/file.txt b/file.txt
+index d00491f..0cfbf08 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-1
++2
+bash-3.2$ echo 3 > file.txt
+githdiff$--staged> file.txt
+diff --git a/file.txt b/file.txt
+index 0cfbf08..00750ed 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-2
++3
+githdiff$--staged> file.txt
+diff --git a/file.txt b/file.txt
+index d00491f..0cfbf08 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1 +1 @@
+-1
++2
+bash-3.2$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   file.txt
+
+bash-3.2$ git reset Head file.txt
+Unstaged changes after reset:
+M	file.txt
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add file.txt
+bash-3.2$ git commit -m "3"
+[master 4418a92] 3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+bash-3.2$ git log
+commit 4418a92a39d0629e50c32de7a037431ec225e28e (HEAD -> master)
+Author: qinyudiao <qdiao@utexas.edu>
+Date:	Wed Jan 29 20:10:35 2020 -0600
+
+    3
+
+commit a70e32216ea9107d65f388d2c7b7a86de9d838ee
+Author: qinyudiao <qdiao@utexas.edu>
+Date:	Wed Jan 29 20:02:17 2020 -0600
+
+    1
+bash-3.2$ echo 4 > file.txt
+bash-3.2$ cat file.txt
+4
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git checkout=file.txt
+bash-3.2$ cat file.txt
+3
+bash-3.2$ git status
+On branch master
+nothing to commit, working tree clean
+bash-3.2$ exit
+exit
+
+Script done on Wed Jan 29 20:11:37 2020

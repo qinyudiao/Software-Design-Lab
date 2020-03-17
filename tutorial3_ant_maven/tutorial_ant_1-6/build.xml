@@ -1,0 +1,30 @@
+<project name = "Hello World Project" default="java">
+    <property name="src.dir" value="src"/>
+    <property name="build.dir" value="build"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="dist.jar.dir" value="${dist.dir}/lib"/>
+    <property name="build.classes.dir" value="${dist.dir}/lib"/>
+    <property name="jar.dir" value="lib"/>
+
+    <target name = "mkdir">
+        <mkdir dir="${build.dir}"/>
+    </target>
+    <target name = "delete">
+        <delete dir="${build.dir}"/>
+    </target>
+    <target name = "compile" depends="mkdir">
+        <javac srcdir="src" destdir="build" classpath="my_lib.jar" includeantruntime="false"/>
+    </target>
+    <target name = "jar" depends="compile">
+        <mkdir dir="jars/"/>
+        <jar jarfile="jars/my_lib.jar" basedir="build">
+            <manifest>
+                <attribute name="HelloWorld" value="my_lib" />
+            </manifest>
+        </jar>
+    </target>
+    <target name = "run" depends="jar">
+        <java jar="jars/my_lib.jar" fork="true"/>
+    </target>
+</project>
+

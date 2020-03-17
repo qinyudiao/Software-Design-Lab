@@ -1,0 +1,87 @@
+Script started on Wed Jan 29 20:12:37 2020
+bash-3.2$ whoami
+diaoqinyu
+bash-3.2$ .dsetup.shnch
+Initialized empty Git repository in /Users/diaoqinyu/Desktop/EE461L/git_repo/git-katas/basic-branching/exercise/.git/
+[master (root-commit) f8c9325] dummy commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dummy.txt
+Switched to a new branch 'second-branch'
+Switched to branch 'master'
+bash-3.2$ git branch
+* master
+  second-branch
+bash-3.2$ git branch mybranch
+bash-3.2$ git branch
+* master
+  mybranch
+  second-branch
+bash-3.2$ git checout mybranch
+git: 'checout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+bash-3.2$ git checkout mybranch
+Switched to branch 'mybranch'
+bash-3.2$ git status
+On branch mybranch
+nothing to commit, working tree clean
+bash-3.2$ git branch
+  master
+* mybranch
+  second-branch
+bash-3.2$ touch file1.txt
+bash-3.2$ git commit -a
+On branch mybranch
+Untracked files:
+	file1.txt
+
+nothing added to commit but untracked files present
+bash-3.2$ git add file1.txt
+bash-3.2$ git commit -m "Initial"Commit"
+[mybranch 7327b72] Initial Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file1.txt
+bash-3.2$ git log --oneline --grapg
+fatal: unrecognized argument: --grapg
+bash-3.2$ git log --oneline --graph
+* 7327b72 (HEAD -> mybranch) Initial Commit
+* f8c9325 (second-branch, master) dummy commit
+bash-3.2$ checkout master
+bash: checkout: command not found
+bash-3.2$ git checkout master
+Switched to branch 'master'
+githlog2--onelinec--graphster
+* f8c9325 (HEAD -> master, second-branch) dummy commit
+bash-3.2$ touch file2.txt
+bash-3.2$ git add file2.txt
+bash-3.2$ git commit file2.txt
+hint: Waiting for your editor to close the file... "~/Desktop/EE461L/git_repo/git-katas/basic-branching/exercise/.git/COMMIT_EDITMSG" 8L, 210C▽  # Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+# Changes to be committed:
+#new file:   file2.txt
+#
+".git/COMMIT_EDITMSG" 8L, 216C written											      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    ~																  ~																~															      ~ 															    -- INSERT --esecond:wq
+[master b91478e] second
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.txt
+gitclogi--onelinei--graph.--all
+* b91478e (HEAD -> master) second
+| * 7327b72 (mybranch) Initial Commit
+|/
+* f8c9325 (second-branch) dummy commit
+bash-3.2$ git checkout mybranchh
+Switched to branch 'mybranch'
+bash-3.2$ ls
+dummy.txt	file1.txt
+bash-3.2$ git diff mybranch master
+diff --git a/file1.txt b/file2.txt
+similarity index 100%
+rename from file1.txt
+rename to file2.txt
+bash-3.2$ exit
+exit
+
+Script done on Wed Jan 29 20:19:59 2020

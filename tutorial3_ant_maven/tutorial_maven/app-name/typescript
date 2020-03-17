@@ -1,0 +1,253 @@
+Script started on Wed Feb 19 16:36:10 2020
+[?1034hbash-3.2$ who am i
+diaoqinyu ttys003  Feb 19 16:36 
+bash-3.2$ mvn validate
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ee461l.tutorial:tutmaven:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for commons:math:jar should not point at files within the project directory, ${basedir}/lib/commons-math-2.2.jar will be unresolvable by dependent projects @ line 33, column 19
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.ee461l.tutorial:tutmaven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding tutmaven 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.062 s
+[[1;34mINFO[m] Finished at: 2020-02-19T16:36:19-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+bash-3.2$ mvn compile
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ee461l.tutorial:tutmaven:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for commons:math:jar should not point at files within the project directory, ${basedir}/lib/commons-math-2.2.jar will be unresolvable by dependent projects @ line 33, column 19
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.ee461l.tutorial:tutmaven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding tutmaven 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:resources[m [1m(default-resources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.423 s
+[[1;34mINFO[m] Finished at: 2020-02-19T16:36:24-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+bash-3.2$ mvn test
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ee461l.tutorial:tutmaven:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for commons:math:jar should not point at files within the project directory, ${basedir}/lib/commons-math-2.2.jar will be unresolvable by dependent projects @ line 33, column 19
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.ee461l.tutorial:tutmaven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding tutmaven 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:resources[m [1m(default-resources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:testResources[m [1m(default-testResources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.mycompany.app.[1mAppTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.mycompany.app.[1mAppTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.592 s
+[[1;34mINFO[m] Finished at: 2020-02-19T16:36:31-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+bash-3.2$ mvn verify
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ee461l.tutorial:tutmaven:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for commons:math:jar should not point at files within the project directory, ${basedir}/lib/commons-math-2.2.jar will be unresolvable by dependent projects @ line 33, column 19
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.ee461l.tutorial:tutmaven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding tutmaven 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:resources[m [1m(default-resources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:testResources[m [1m(default-testResources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.mycompany.app.[1mAppTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.mycompany.app.[1mAppTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.0.2:jar[m [1m(default-jar)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.669 s
+[[1;34mINFO[m] Finished at: 2020-02-19T16:36:36-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+bash-3.2$ mvn package
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ee461l.tutorial:tutmaven:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for commons:math:jar should not point at files within the project directory, ${basedir}/lib/commons-math-2.2.jar will be unresolvable by dependent projects @ line 33, column 19
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.ee461l.tutorial:tutmaven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding tutmaven 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:resources[m [1m(default-resources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.0.2:testResources[m [1m(default-testResources)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /Users/diaoqinyu/Desktop/EE461L/tutorial_3/tutorial_maven/app-name/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running com.mycompany.app.[1mAppTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.mycompany.app.[1mAppTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:3.0.2:jar[m [1m(default-jar)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.660 s
+[[1;34mINFO[m] Finished at: 2020-02-19T16:36:42-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+bash-3.2$ mvn package[1Pverify[2Ptestcompilevalidate[C[C[C[C[C[C[C[C[C[C[4Pwho am i[4Pexitmvn compile[3Pwho am i[4Pexitwho am i[4Pexitmvn sitejava -jar target/tutmaven-1.0.jar 
+------------------------------------------------------------
+CircleCalc v1.0
+
+Calculates and prints information for a user-supplied radius
+------------------------------------------------------------
+Enter the circle's radius: 
+5
+
+Circle properties:
+	Radius: 5.0
+	Diameter: 31.41592653589793
+	Area: 31.41592653589793
+	Arc length at 1.57 radian: 7.8500000000000005
+	Arc length at 90 degrees: 7.853981633974483
+	Sector area at 1.57 radian: 19.625
+	Sector area at 90 degrees: 19.634954084936208
+bash-3.2$ mvn site
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.ee461l.tutorial:tutmaven:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for commons:math:jar should not point at files within the project directory, ${basedir}/lib/commons-math-2.2.jar will be unresolvable by dependent projects @ line 33, column 19
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------< [0;36morg.ee461l.tutorial:tutmaven[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding tutmaven 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-site-plugin:3.7.1:site[m [1m(default-site)[m @ [36mtutmaven[0;1m ---[m
+[[1;34mINFO[m] configuring report plugin org.apache.maven.plugins:maven-project-info-reports-plugin:3.0.0
+[[1;34mINFO[m] 15 reports detected for maven-project-info-reports-plugin:3.0.0: ci-management, dependencies, dependency-info, dependency-management, distribution-management, index, issue-management, licenses, mailing-lists, modules, plugin-management, plugins, scm, summary, team
+[[1;34mINFO[m] [1mRendering site with default locale English (en)[m
+[[1;34mINFO[m] Relativizing decoration links with respect to localized project URL: http://www.example.com
+[[1;34mINFO[m] Rendering content with [1morg.apache.maven.skins:maven-default-skin:jar:1.2 skin[m.
+[[1;34mINFO[m] Generating "[1mDependencies[m" report [1m --- [0;32mmaven-project-info-reports-plugin:3.0.0:dependencies[m
+[[1;33mWARNING[m] Artifact commons:math:jar:2.2 has no file and won't be listed in dependency files details.
+[[1;34mINFO[m] Generating "[1mDependency Information[m" report[1m --- [0;32mmaven-project-info-reports-plugin:3.0.0:dependency-info[m
+[[1;34mINFO[m] Generating "[1mAbout[m" report        [1m --- [0;32mmaven-project-info-reports-plugin:3.0.0:index[m
+[[1;34mINFO[m] Generating "[1mPlugin Management[m" report[1m --- [0;32mmaven-project-info-reports-plugin:3.0.0:plugin-management[m
+[[1;34mINFO[m] Generating "[1mPlugins[m" report      [1m --- [0;32mmaven-project-info-reports-plugin:3.0.0:plugins[m
+[[1;34mINFO[m] Generating "[1mSummary[m" report      [1m --- [0;32mmaven-project-info-reports-plugin:3.0.0:summary[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.596 s
+[[1;34mINFO[m] Finished at: 2020-02-19T16:37:03-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+bash-3.2$ exit
+exit
+
+Script done on Wed Feb 19 16:37:07 2020
