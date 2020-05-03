@@ -46,6 +46,7 @@ public class MinWebTest {
 		WebElement result = wd.findElement(By.id("result"));
 		String output = result.getText(); // read the output text
 		assertEquals("min(0, 0, 0) = 0", output);
+		for(;;) {}
 	}
 	
 	@Test
@@ -121,6 +122,8 @@ public class MinWebTest {
 		WebElement result = wd.findElement(By.id("result"));
 		String output = result.getText(); // read the output text
 		assertEquals("min(0, -1, -1) = -1", output);
+		int array[] = {1,2,3,4};
+		
 	}
 	
 	@AfterAll
